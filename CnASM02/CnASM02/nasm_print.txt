@@ -1,0 +1,167 @@
+%%writefile printf_func.asm
+
+section .text
+    global printf_func             ; Make the function globally accessible
+
+printf_func:
+    ; Save registers that will be modified
+    push ebx
+    push ecx
+    push edx
+
+    ; Save the base pointer
+    push ebp
+    mov ebp, esp
+
+    ; Get the pointer to the message
+    add ebp, 20
+    mov ecx, [ebp]  ; pointer to the message (passed from C)
+
+print_loop:
+    mov al, [ecx]      ; load the byte at ecx into al
+    
+    cmp al, 0          ; compare the byte with 0
+    je  print_done     ; if zero, end of string
+
+    ; Check for '%'
+    cmp al, '%'
+    je check_next_char
+
+    ; sys_write for one character
+    mov eax, 4         ; sys_write system call number
+    mov ebx, 1         ; file descriptor (stdout)
+    mov edx, 1         ; length is 1
+    int 0x80           ; make the system call
+
+    inc ecx            ; move to the next character
+    jmp print_loop     ; repeat the loop
+
+check_next_char:
+
+    inc ecx            ; move to the next character
+    mov al, [ecx]
+    
+    cmp al, 'd'
+    je print_int
+
+    cmp al, 's'
+    je print_str
+
+    ; unknown format specifier, ignore it
+    jmp print_loop
+
+print_int:
+
+    push ecx
+    push eax
+
+    ; load the integer from the stack
+    add ebp, 4
+    mov eax, [ebp]
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+    mov ecx, 10
+    mov ebx, buffer
+loop1:
+    xor edx, edx
+    div ecx
+    add dl, 48
+    
+    mov [ebx], dl
+    inc ebx
+    
+    cmp eax, 0
+    je reverse
+
+    jmp loop1
+
+reverse:
+    ; Reverse the string in buffer
+    mov ecx, buffer
+    mov edx, buffer
+loop3:
+    cmp byte [edx], 0
+    je reverse2
+    inc edx
+    jmp loop3
+
+reverse2:
+    dec edx
+    mov al, [edx]
+    mov ah, [ecx]
+    mov [edx], ah
+    mov [ecx], al
+    inc ecx
+    cmp ecx, edx
+    jl reverse2
+
+print:
+
+    ; Calculate the length of the string in buffer
+    mov ecx, buffer
+    mov edx, 0
+loop2:
+    cmp byte [ecx], 0
+    je print2
+    inc edx
+    inc ecx
+    jmp loop2
+
+print2:
+    mov eax, 4
+    mov ebx, 1
+    mov ecx, buffer
+    int 0x80
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+    pop eax
+    pop ecx
+    
+    inc ecx
+
+    jmp print_loop
+
+print_str:
+
+    push ecx 
+
+    ; load the integer from the stack
+    add ebp, 4
+    mov ecx, [ebp]
+
+    loop_str:
+
+    mov al, [ecx]      ; load the byte at ecx into al
+    
+    cmp al, 0          ; compare the byte with 0
+    je  str_done     ; if zero, end of string
+
+    ; sys_write for one character
+    mov eax, 4         ; sys_write system call number
+    mov ebx, 1         ; file descriptor (stdout)
+    mov edx, 1         ; length is 1
+    int 0x80           ; make the system call
+
+    inc ecx            ; move to the next character
+    jmp loop_str     ; repeat the loop
+
+    str_done:
+
+    pop ecx
+    inc ecx
+
+    jmp print_loop
+
+print_done:
+    ; Restore registers
+    pop ebp
+    pop edx
+    pop ecx
+    pop ebx
+
+    ret                ; return to the caller
+
+section .data
+    buffer times 10 db 0

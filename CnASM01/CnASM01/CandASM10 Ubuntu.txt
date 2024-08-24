@@ -1,0 +1,70 @@
+
+%%writefile main.cpp
+
+#include <stdio.h>
+#include <time.h>
+
+// Iterative Factorial
+unsigned long long factorial_iterative(int n) {
+    unsigned long long result = 1;
+    for (int i = 2; i <= n; i++) {
+        result *= i;
+    }
+    return result;
+}
+
+int main() {
+    int num = 63;
+    unsigned long long fact_iterative = factorial_iterative(num);
+    printf("Iterative Factorial of %d = %llu\n", num, fact_iterative);
+    return 0;
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+%%writefile main.cpp
+
+#include <stdio.h>
+#include <time.h>
+
+// Recursive Factorial
+unsigned long long factorial_recursive(int n) {
+    if (n == 0 || n == 1) {
+        return 1; // Base case
+    }
+    else {
+        return n * factorial_recursive(n - 1); // Recursive call
+    }
+}
+
+int main() {
+    int num = 63;
+    unsigned long long fact_recursive = factorial_recursive(num);
+    printf("Recursive Factorial of %d = %llu\n", num, fact_recursive);
+    return 0;
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+%%bash
+
+# Compile the C++ program and generate assembly file
+g++ -S -o main.asm main.cpp
+
+# Compile the C++ program
+g++ -o main main.cpp
+
+# Record the time in nanoseconds before execution
+start_time=$(date +%s%N)
+
+# Run the program
+./main
+
+# Record the time in nanoseconds after execution
+end_time=$(date +%s%N)
+
+# Calculate the duration
+duration=$((end_time - start_time))
+
+# Print the time taken in nanoseconds
+echo "Time taken: $duration nanoseconds"
