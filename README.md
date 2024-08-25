@@ -50,7 +50,7 @@ To get started with the project, follow these steps:
 
 ## Resources
 
- - [ C 2nd Edition by Brian Kernighan and Dennis Ritchie ](https://www.google.com)
- - [ Kip R. Irvine - Assembly Language for x86 Processors 7th edition ](https://www.google.com)
+ - [ C 2nd Edition by Brian Kernighan and Dennis Ritchie ](https://github.com/MHM-Rajpoot/Lets-C-Assembly/blob/main/meta/C%20%202nd%20Edition%20by%20Brian%20Kernighan%20and%20Dennis%20Ritchie%20Copy.pdf)
+ - [ Kip R. Irvine - Assembly Language for x86 Processors 7th edition ](https://github.com/MHM-Rajpoot/Lets-C-Assembly/blob/main/meta/Kip%20R.%20Irvine%20-%20Assembly%20Language%20for%20x86%20Processors%207th%20edition%20Free.pdf.pdf)
  - [ C Programming and Assembly Language ](https://www.youtube.com/watch?v=vydldXpA6ec&list=PLyqSpQzTE6M8O9Oy9t-yhiAUXOi-rmTp_)
 
