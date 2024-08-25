@@ -5,32 +5,32 @@ Welcome to **Let's C Assembly**! This project is designed to help you understand
 ## Table of Contents
 
 ### 1. Introduction to Computer System Design
-   - **1.1 [Computer System Design](#)**
-   - **1.2 [Memory Operations](#)**
-   - **1.3 [Logical Memory Maps](#)**
+   - **1.1 [Computer System Design]**
+   - **1.2 [Memory Operations]**
+   - **1.3 [Logical Memory Maps]**
 
 ### 2. CPU Processing and Memory Management
-   - **2.1 [Processing](#)**
-   - **2.2 [Registers](#)**
-   - **2.3 [Segmentation](#)**
+   - **2.1 [Processing]**
+   - **2.2 [Registers]**
+   - **2.3 [Segmentation]**
 
 ### 3. Basic Assembly Operations
-   - **3.1 [BASIC Operations](#)**
-   - **3.2 [Stack](#)**
-   - **3.3 [Sub Routines](#)**
+   - **3.1 [BASIC Operations]**
+   - **3.2 [Stack]**
+   - **3.3 [Sub Routines]**
 
 ### 4. Translating C to Assembly (MSVC x86)
-   - **4.1 [C to Assembly (MSVC x86)](#)**
-   - **4.2 [Pointer Arithmetic (MSVC x86)](#)**
+   - **4.1 [C to Assembly (MSVC x86)]**
+   - **4.2 [Pointer Arithmetic (MSVC x86)]**
 
 ### 5. Compiling and Analyzing C Code
-   - **5.1 [Compiling C](#)**
-   - **5.2 [C to Assembly with Stack Context Switching Problems](#)**
+   - **5.1 [Compiling C]**
+   - **5.2 [C to Assembly with Stack Context Switching Problems]**
 
 ### 6. Advanced Topics
-   - **6.1 [Recursion & Assembly](#)**
-   - **6.2 [C & Assembly Subroutines](#)**
-   - **6.3 [Local Variables in Subroutines](#)**
+   - **6.1 [Recursion & Assembly]**
+   - **6.2 [C & Assembly Subroutines]**
+   - **6.3 [Local Variables in Subroutines]**
 
 ## Getting Started
 
