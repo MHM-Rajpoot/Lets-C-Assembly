@@ -52,5 +52,5 @@ To get started with the project, follow these steps:
 
  - [ C 2nd Edition by Brian Kernighan and Dennis Ritchie ](https://www.google.com)
  - [ Kip R. Irvine - Assembly Language for x86 Processors 7th edition ](https://www.google.com)
- - [ C Programming and Assembly Language ]([https://www.google.com](https://www.youtube.com/watch?v=vydldXpA6ec&list=PLyqSpQzTE6M8O9Oy9t-yhiAUXOi-rmTp_))
+ - [ C Programming and Assembly Language ](https://www.google.com](https://www.youtube.com/watch?v=vydldXpA6ec&list=PLyqSpQzTE6M8O9Oy9t-yhiAUXOi-rmTp_)
 
