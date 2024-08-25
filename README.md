@@ -1,6 +1,5 @@
 # Let's C Assembly
 
-```markdown
 Welcome to **Let's C Assembly**! This project is designed to help you understand the intricacies of assembly language programming by breaking down C code into its assembly equivalent. The repository is structured to guide you through the basics of computer system design to more advanced topics like stack context switching and recursion. By the end of this project, you will have a solid understanding of how high-level C code translates into low-level assembly instructions.
 
 ## Table of Contents
@@ -37,17 +36,18 @@ Welcome to **Let's C Assembly**! This project is designed to help you understand
 
 To get started with the project, follow these steps:
 
-### Option 1: Clone the Repository
-git clone <repository_url>
+   ### Option 1: Clone the Repository
+   git clone <repository_url>
+   
+   ### Option 2: Download and Run
+   Download the zip file
+   Extract the contents
+   Open the project with the .vsproj file using Visual Studio 2022 (VS2022)
+   
+   ### Option 3: Use Google Colab
+   Open the x86 Nasm file in Google Colab
+   Follow the instructions to run the project
 
-### Option 2: Download and Run
-Download the zip file
-Extract the contents
-Open the project with the .vsproj file using Visual Studio 2022 (VS2022)
-
-### Option 3: Use Google Colab
-Open the x86 Nasm file in Google Colab
-Follow the instructions to run the project
 ## Resources
 
     - [ C 2nd Edition by Brian Kernighan and Dennis Ritchie ](https://www.google.com)
