@@ -19,9 +19,9 @@ Welcome to **Let's C Assembly**! This project is designed to help you understand
    - 3.2 Stack
    - 3.3 Sub Routines
 
-### 4. Translating C to Assembly (MSVC x86)
-   - 4.1 C to Assembly (MSVC x86)
-   - 4.2 Pointer Arithmetic (MSVC x86)
+### 4. Translating C to Assembly (MASM x86)
+   - 4.1 C to Assembly (MASM x86)
+   - 4.2 Pointer Arithmetic (MASM x86)
 
 ### 5. Compiling and Analyzing C Code
    - 5.1 Compiling C
