@@ -6,8 +6,8 @@ Welcome to **Let's C Assembly**! This project is designed to help you understand
 
 ### 1. Introduction to Computer System Design
    - 1.1 Computer System Design
-   - 1.2 Memory Operations]
-   - 1.3 Logical Memory Maps]
+   - 1.2 Memory Operations
+   - 1.3 Logical Memory Maps
 
 ### 2. CPU Processing and Memory Management
    - 2.1 Processing
