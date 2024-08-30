@@ -40,13 +40,12 @@ To get started with the project, follow these steps:
    git clone <https://github.com/MHM-Rajpoot/Lets-C-Assembly/>
    
    ### Option 2: Download and Run
-   Download the zip file
-   Extract the contents
-   Open the project with the .vsproj file using Visual Studio 2022 (VS2022)
+   - Download the zip file
+   - Extract the Contents
+   - Open the project with the .vsproj file using Visual Studio 2022 (VS2022)
    
    ### Option 3: Use Google Colab
-   Open the x86 Nasm file in Google Colab
-   Follow the instructions to run the project
+   Open the x86 Nasm file in Google Colab and Run
 
 ## Resources
 
