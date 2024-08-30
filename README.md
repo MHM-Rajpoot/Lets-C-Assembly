@@ -37,10 +37,10 @@ Welcome to **Let's C Assembly**! This project is designed to help you understand
 To get started with the project, follow these steps:
 
    ### Option 1: Clone the Repository
-   git clone <https://github.com/MHM-Rajpoot/Lets-C-Assembly/>
+   Git Clone <https://github.com/MHM-Rajpoot/Lets-C-Assembly/>
    
    ### Option 2: Download and Run
-   - Download the zip file
+   - Download the .zip file
    - Extract the Contents
    - Open the project with the .vsproj file using Visual Studio 2022 (VS2022)
    
