@@ -45,7 +45,7 @@ To get started with the project, follow these steps:
    - Open the project with the .vsproj file using Visual Studio 2022 (VS2022)
    
    ### Option 3: Use Google Colab
-   Open the x86 Nasm file in Google Colab and Run
+   Open the x86 Nasm .ipynb file in Google Colab and Run
 
 ## Resources
 
