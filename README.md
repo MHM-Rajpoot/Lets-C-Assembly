@@ -25,7 +25,8 @@ Welcome to **Let's C Assembly**! This project is designed to help you understand
 
 ### 5. Compiling and Analyzing C Code
    - 5.1 Compiling C
-   - 5.2 Context Switching Problems
+   - 5.2 C to Assembly with Stack
+   - 5.3 Context Switching Problems
 
 ### 6. Advanced Topics
    - 6.1 Recursion & Assembly
