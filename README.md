@@ -48,6 +48,9 @@ To get started with the project, follow these steps:
    ### Option 3: Use Google Colab
    Open the x86 Nasm .ipynb file in Google Colab and Run
 
+## Lecture Videos
+For detailed lectures on these topics, please visit our YouTube channel: [YouTube](https://youtu.be/OpzzIxagP18)
+
 ## Resources
 
  - [ C 2nd Edition by Brian Kernighan and Dennis Ritchie ](https://github.com/MHM-Rajpoot/Lets-C-Assembly/blob/main/meta/C%20%202nd%20Edition%20by%20Brian%20Kernighan%20and%20Dennis%20Ritchie%20Copy.pdf)
